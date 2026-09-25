@@ -78,8 +78,6 @@ Trong vận chuyển/lưu kho hàng nhạy cảm với nhiệt độ (dược ph
 
 ## 4. Yêu cầu kỹ thuật bắt buộc (Definition of Done)
 
-Chia theo phase — xem chi tiết thứ tự thực hiện tại [`ROADMAP.md`](./ROADMAP.md).
-
 **Phase 1 — Core RTOS & offline-first**
 - [ ] 100% viết bằng **ESP-IDF thuần** (không Arduino framework).
 - [ ] Tối thiểu **5 FreeRTOS task** như kiến trúc ở trên, giao tiếp qua Queue/Event Group, có priority và stack size được tính toán và ghi lại lý do (không dùng giá trị mặc định tùy tiện).
@@ -145,7 +143,7 @@ Chia theo phase — xem chi tiết thứ tự thực hiện tại [`ROADMAP.md`]
 | Cảm biến nhiệt độ/độ ẩm I2C (BME280 hoặc SHT31) | Nguồn dữ liệu chính — dùng driver component có sẵn (ESP Component Registry) thay vì tự viết từ đầu, để dồn effort cho phần lõi RTOS/bảo mật/năng lượng |
 | Pin Li-ion 18650 + module sạc/bảo vệ (TP4056) | Nguồn nuôi độc lập, đo thời lượng hoạt động |
 | Module đo điện áp pin (ADC chia áp) | Theo dõi mức pin cho `health_task` |
-| Module RTC ngoài (DS3231) | **Bắt buộc** (không còn tùy chọn) — giữ thời gian chính xác khi deep sleep dài không có mạng để sync SNTP |
+| Module RTC ngoài (DS3231) | Giữ thời gian chính xác khi deep sleep dài không có mạng để sync SNTP |
 | LED/Buzzer | Cảnh báo cục bộ khi vượt ngưỡng, độc lập với mạng |
 
 ---
@@ -207,11 +205,8 @@ idf.py -T test_record_codec flash monitor
 
 ---
 
-## 11. Roadmap học & phát triển
 
-Dự án được chia thành **5 phase**, mỗi phase cho ra firmware chạy/demo được. Xem chi tiết lộ trình học FreeRTOS + ESP-IDF và thứ tự triển khai từng phase tại [`ROADMAP.md`](./ROADMAP.md).
-
-## 12. Hướng phát triển tiếp theo (sau khi hoàn thành 5 phase)
+## 11. Hướng phát triển tiếp theo (sau khi hoàn thành 5 phase)
 
 - Flash encryption cho triển khai thương mại thật (secure boot đã đưa vào Phase 4 ở trên).
 - Hỗ trợ nhiều cảm biến qua I2C multiplexer (giám sát nhiều điểm trong 1 kho).
