@@ -153,6 +153,3 @@ Xem chi tiết lộ trình học FreeRTOS + ESP-IDF trước khi bắt tay vào 
 - Dashboard xem lịch sử nhiệt độ theo hành trình vận chuyển (bản đồ + biểu đồ).
 - Chuẩn hoá dữ liệu theo giao thức LWM2M hoặc chuẩn cold-chain (GS1) nếu hướng tới sản phẩm thương mại.
 
-## License
-
-MIT — điều chỉnh tuỳ theo mục đích sử dụng (cá nhân/học tập hay portfolio công khai).
