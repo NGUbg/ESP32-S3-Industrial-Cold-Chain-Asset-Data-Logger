@@ -2,7 +2,6 @@
 
 > Firmware-first IoT data logger cho bài toán giám sát chuỗi lạnh (cold-chain) / tài sản di động — thiết kế theo đúng các ràng buộc kỹ thuật mà một hệ thống nhúng chạy thật ngoài sản xuất cần có: đa nhiệm thời gian thực (RTOS), hoạt động ổn định khi mất mạng, bảo mật truyền thông, cập nhật OTA an toàn, và tối ưu năng lượng.
 
-Dự án này được xây dựng như bước nâng cấp có chủ đích sau capstone **Smart Home & AI Camera cho người cao tuổi** (Samsung Innovation Campus), nhằm lấp các khoảng trống kỹ thuật của firmware cũ (single-loop Arduino, publish một chiều, không bảo mật, không OTA).
 
 ---
 
