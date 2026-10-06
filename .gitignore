@@ -7,8 +7,7 @@ managed_components/
 dependencies.lock
 
 # =============================================================================
-# ESP-IDF Generated Configs (chỉ giữ sdkconfig.defaults, không giữ sdkconfig)
-# sdkconfig được sinh ra tự động từ sdkconfig.defaults khi chạy idf.py
+# ESP-IDF Generated Configs 
 # =============================================================================
 cold-chain-logger/sdkconfig
 cold-chain-logger/build/
@@ -17,7 +16,7 @@ cold-chain-logger/dependencies.lock
 cold-chain-logger/sdkconfig.old
 
 # =============================================================================
-# Secrets & Credentials — KHÔNG BAO GIỜ commit lên GitHub
+# Secrets & Credentials 
 # =============================================================================
 # TLS certificates
 *.pem
@@ -27,7 +26,7 @@ cold-chain-logger/sdkconfig.old
 *.p12
 *.pfx
 
-# MQTT / WiFi credentials nếu hard-code trong file riêng
+# MQTT / WiFi credentials 
 secrets.h
 credentials.h
 wifi_config.h
@@ -35,7 +34,7 @@ wifi_config.h
 # =============================================================================
 # IDE & Editor
 # =============================================================================
-# VSCode (chỉ ignore user-specific settings, giữ lại .vscode/extensions.json)
+# VSCode (
 .vscode/settings.json
 .vscode/launch.json
 .vscode/c_cpp_properties.json
@@ -54,23 +53,14 @@ cmake-build-*/
 # =============================================================================
 # Hệ điều hành
 # =============================================================================
-# macOS
-.DS_Store
-.AppleDouble
-.LSOverride
 
 # Linux
 *~
 .nfs*
 
-# Windows
-Thumbs.db
-ehthumbs.db
-Desktop.ini
-$RECYCLE.BIN/
 
 # =============================================================================
-# Python (dùng bởi ESP-IDF tools)
+# Python 
 # =============================================================================
 __pycache__/
 *.py[cod]
@@ -88,12 +78,12 @@ dist/
 *.map
 
 # =============================================================================
-# Flash & OTA binary artifacts (không cần track, sinh lại từ build)
+# Flash & OTA binary artifacts
 # =============================================================================
 *.bin
 *.elf
 *.hex
 
-# Nhưng GIỮ LẠI partitions.csv (đây là source, không phải artifact)
+#GIỮ LẠI partitions.csv (đây là source, không phải artifact)
 !cold-chain-logger/partitions.csv
 
