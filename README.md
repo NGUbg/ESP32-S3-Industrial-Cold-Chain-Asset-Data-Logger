@@ -85,7 +85,7 @@ Trong vận chuyển/lưu kho hàng nhạy cảm với nhiệt độ (dược ph
 | Cảm biến nhiệt độ/độ ẩm I2C (SHT31) | Nguồn dữ liệu chính |
 | Pin Li-ion 18650 + module sạc/bảo vệ (TP4056) | Nguồn nuôi độc lập, đo thời lượng hoạt động |
 | Module đo điện áp pin (ADC chia áp) | Theo dõi mức pin cho `health_task` |
-| (Tùy chọn) Module RTC ngoài (DS3231) | Giữ thời gian chính xác khi deep sleep dài |
+| Module RTC ngoài (DS3231) | Giữ thời gian chính xác khi deep sleep dài |
 
 ---
 
