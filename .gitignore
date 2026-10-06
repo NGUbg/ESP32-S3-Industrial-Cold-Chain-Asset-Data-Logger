@@ -14,6 +14,7 @@ cold-chain-logger/sdkconfig
 cold-chain-logger/build/
 cold-chain-logger/managed_components/
 cold-chain-logger/dependencies.lock
+cold-chain-logger/sdkconfig.old
 
 # =============================================================================
 # Secrets & Credentials — KHÔNG BAO GIỜ commit lên GitHub
