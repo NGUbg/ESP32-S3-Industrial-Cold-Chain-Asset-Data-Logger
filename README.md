@@ -142,11 +142,7 @@ idf.py -T test_parser flash monitor
 
 ---
 
-## 9. Roadmap học & phát triển
-
-Xem chi tiết lộ trình học FreeRTOS + ESP-IDF trước khi bắt tay vào dự án này tại [`ROADMAP.md`](./ROADMAP.md).
-
-## 10. Hướng phát triển tiếp theo
+## 9. Hướng phát triển tiếp theo
 
 - Thêm secure boot + flash encryption cho triển khai thương mại thật.
 - Hỗ trợ nhiều cảm biến qua I2C multiplexer (giám sát nhiều điểm trong 1 kho).
