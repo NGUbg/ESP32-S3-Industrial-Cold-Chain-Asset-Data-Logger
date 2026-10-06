@@ -103,7 +103,7 @@ cold-chain-logger/
 │   ├── network_task.c/.h
 │   └── health_task.c/.h
 ├── components/
-│   ├── bme280_driver/          # driver I2C tự viết
+│   ├── SHT31_driver/          # driver I2C tự viết
 │   └── storage_manager/        # wrapper LittleFS + logic store-and-forward
 ├── test/
 │   └── test_parser.c           # unit test bằng Unity
