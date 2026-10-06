@@ -1,5 +1,6 @@
 #include <stdint.h>
 #include <freertos/FreeRTOS.h>
+#include <freertos/task.h>
 #include <esp_log.h>
 #include <esp_system.h>
 
@@ -13,9 +14,11 @@ void app_main(void)
     uint32_t count = 0;
     while (1) {
         ESP_LOGI(TAG, "alive: count=%lu, tick=%lu",
-                 (unsigned long),
+                 (unsigned long)count,
                  (unsigned long)xTaskGetTickCount());
         vTaskDelay(pdMS_TO_TICKS(1000));
+        count++;
+
     }
-    count++;
+    
 }

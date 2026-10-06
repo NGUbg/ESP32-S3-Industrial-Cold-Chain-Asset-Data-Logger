@@ -1,4 +1,3 @@
-idf_component_register(SRCS "bme280_driver.c"
+idf_component_register(SRCS "SHT31.c"
                        INCLUDE_DIRS "include"
                        REQUIRES driver)
-

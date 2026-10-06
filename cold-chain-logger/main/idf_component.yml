@@ -1,5 +1,4 @@
 dependencies:
-  esp_littlefs:
-    version: "~1.14.1"
+  joltwallet/littlefs:
     git: https://github.com/joltwallet/esp_littlefs.git
-
+    version: v1.14.8
