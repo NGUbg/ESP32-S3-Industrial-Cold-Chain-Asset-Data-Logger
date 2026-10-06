@@ -111,7 +111,8 @@ cold-chain-logger/
 │   ├── architecture.md
 │   ├── power-measurements.md
 │   └── state-diagram.png
-└── .github/workflows/build.yml # CI build tự động
+.github/workflows/
+├── build.yml # CI build tự động
 ```
 
 ---
